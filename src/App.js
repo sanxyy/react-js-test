@@ -10,7 +10,6 @@ class App extends Component{  //extends Component
     super();  
     //declarative state
     this.state = {
-      greeting: 'Greeting, react world',
       monsters: [],
       searchvalue: ''
     };
@@ -40,7 +39,8 @@ class App extends Component{  //extends Component
     <div className="App">
       <header className="App-header">     
           <h1>{this.state.greeting}</h1>
-          <h1>filter = {filteredMonster.map( monster =>monster.name+',' )}</h1>
+          <h1>Monster roll</h1>
+          {/*<h1>filter = {filteredMonster.map( monster =>monster.name+',' )}</h1>*/}
           <SearchBox placeholder='search monster' handlechange={
             e=> {
               this.setState({searchvalue : e.target.value })
